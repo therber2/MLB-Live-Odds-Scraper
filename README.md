@@ -1,14 +1,26 @@
-# MLB-Live-Odds-Scraper
-Includes rotation number, date as yyyymmdd, opening and closing line for Moneyline, Runline and Total averaged via ten major sportsbooks
+MLB Live Odds Scraper
 
-To run:
-1. go to Data tab in excel
-2. hit Refresh all
+Overview
 
-You should open "Queries and connections" to see what things are running while a refresh is happening.
-If you get any errors on the first run jsut make sure your credentials are all setup. 
-You can just use anonymous or public credentials. 
+This Excel-based scraper automates the daily gathering and aggregation of Major League Baseball (MLB) betting odds from multiple major sportsbooks. It pulls moneyline, runline, and total (over/under) lines, showing both opening and current values to help bettors, analysts, and data enthusiasts monitor line movements, spot value bets, and track market trends. The output is organized into clean tables that update via Power Query, enabling fast refreshes and seamless data integration.
 
-One refresh visits 3 pagse. You can disable background refresh to make sure you don't get blocked.
+Features
 
-Enjoy!
+Scrapes and consolidates moneyline, runline, and total lines from 10 major sportsbooks.
+Tracks opening and current betting odds for comprehensive line movement analysis.
+Outputs aggregated tables by game and bet type (Moneyline, Runline, Over/Under).
+Refresh log sheet for monitoring successful updates and error diagnostics.
+Designed for easy manual or scheduled refresh in Excel, with transparent Power Query automation steps.
+Compatible with Power BI import for added data visualization and reporting.
+Fully documented with sample datasets and operational instructions.
+
+Usage
+
+Open the Excel file and navigate to the Refresh_Log sheet to check the status of previous refreshes.
+To update odds, refresh all data queries (Data > Refresh All).
+Review aggregated betting odds in the main output sheets (e.g., Sportscapping_ML_RL_OU).
+Optional: Import the Excel file into Power BI Desktop to create dynamic visual reports (see Power BI documentation for import steps).
+
+License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
